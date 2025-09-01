@@ -174,7 +174,7 @@ A análise do gráfico revela o seguinte padrão de distribuição:
 Essa distribuição mostra que, enquanto alguns estados concentram um número maior de participantes, a maioria das UFs na amostra tem uma representação menor e mais uniforme.
 
 
-    ![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
 
 * **TP\_LINGUA**
     ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
