@@ -336,7 +336,8 @@ A análise do gráfico revela a frequência das notas em diferentes faixas, alé
 
 Essa análise indica que, na amostra, a maior concentração de notas em **Ciências Humanas** está nas faixas mais altas, com um pico claro na faixa de **600 pontos**.
 
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+   
+![Boxplot](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
 
 O boxplot oferece um resumo estatístico das notas de **Ciências Humanas** do ENEM 2023, com base em uma amostra de microdados.  
 Este tipo de gráfico é ideal para visualizar **distribuição, tendência central e dispersão** dos dados.
