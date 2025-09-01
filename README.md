@@ -161,7 +161,19 @@ Este gráfico é eficaz para visualizar rapidamente a disparidade na distribuiç
 
 
 * **SG\_UF\_PROVA**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png)
+    ![Gráfico de Barras](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png
+
+O gráfico de barras ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
+
+A análise do gráfico revela o seguinte padrão de distribuição:
+
+- **RJ (Rio de Janeiro):** 4 participantes (maior frequência).  
+- **SP (São Paulo), GO (Goiás) e CE (Ceará):** 2 participantes cada.  
+- **SC, RS, RN, PI, PB, PA, MG, MA, AP e AL:** 1 participante cada.
+
+Essa distribuição mostra que, enquanto alguns estados concentram um número maior de participantes, a maioria das UFs na amostra tem uma representação menor e mais uniforme.
+
+
     ![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
 
 * **TP\_LINGUA**
