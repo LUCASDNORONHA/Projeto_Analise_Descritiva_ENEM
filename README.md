@@ -50,14 +50,16 @@ Projeto_Analise_Descritiva_ENEM/
 
 2. Instale os pacotes necessários (caso não estejam instalados):
 
+### NOTA_MT_MATEMATICA
+![Histograma NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
+![Boxplot NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+
 ```r
 install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
 
 ### TP_LINGUA
 ![Gráfico de Barras TP_LINGUA](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
 
-### NOTA_MT_MATEMATICA
-![Histograma NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
-![Boxplot NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+
 
 
