@@ -176,6 +176,17 @@ Essa distribuição mostra que, enquanto alguns estados concentram um número ma
 
 ![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
 
+O gráfico de pizza **"Distribuição - SG_UF_PROVA"** representa a mesma distribuição de participantes por Unidade da Federação (UF) em uma amostra de dados do ENEM 2023, mas de forma proporcional.
+
+A visualização em pizza confirma a análise do gráfico de barras anterior, enfatizando as proporções:
+
+- **RJ (Rio de Janeiro):** maior fatia, refletindo a maior frequência de participantes na amostra.  
+- **SP (São Paulo), GO (Goiás) e CE (Ceará):** próximas em tamanho, indicando maior proporção de participantes em relação aos demais estados.  
+- **Demais UFs (SC, RS, RN, PI, PB, PA, MG, MA, AP e AL):** fatias menores e de tamanhos semelhantes, cada uma representando apenas um participante.
+
+Este gráfico é eficaz para demonstrar visualmente que, na amostra analisada, a maioria dos participantes se concentra em alguns poucos estados, com o **Rio de Janeiro** sendo o mais proeminente.
+
+
 * **TP\_LINGUA**
     ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
     ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
