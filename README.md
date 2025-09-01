@@ -319,7 +319,50 @@ Este gráfico é ideal para mostrar de forma rápida e clara a pequena diferenç
 
 * **NOTA\_CH\_CIENCIAS\_HUMANAS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)
+
+O histograma exibe a distribuição das notas dos participantes do ENEM 2023 na prova de **Ciências Humanas**, com base em uma amostra de microdados.
+
+A análise do gráfico revela a frequência das notas em diferentes faixas, além da posição da **média** e da **mediana**:
+
+- **Distribuição das notas:**  
+  As notas mais frequentes estão concentradas em torno de **500** e **600** pontos.  
+  - Três participantes obtiveram notas na faixa de **600**.  
+  - Dois participantes estão na faixa de **500**.  
+  - Notas mais baixas (300 e 400) e algumas intermediárias aparecem com menor frequência.  
+
+- **Medidas de tendência central:**  
+  - A **mediana** (linha verde pontilhada) está em torno de **500**, indicando que metade dos participantes tem notas iguais ou inferiores a esse valor, e a outra metade iguais ou superiores.  
+  - A **média** (linha vermelha, não visível) deve estar próxima da mediana, sugerindo uma distribuição relativamente equilibrada.  
+
+Essa análise indica que, na amostra, a maior concentração de notas em **Ciências Humanas** está nas faixas mais altas, com um pico claro na faixa de **600 pontos**.
+
     ![Boxplot](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+
+O boxplot oferece um resumo estatístico das notas de **Ciências Humanas** do ENEM 2023, com base em uma amostra de microdados.  
+Este tipo de gráfico é ideal para visualizar **distribuição, tendência central e dispersão** dos dados.
+
+A análise do boxplot revela:
+
+- **Mediana:**  
+  Representada pela linha verde pontilhada dentro da caixa, está próxima de **500 pontos**, indicando que 50% dos participantes têm notas iguais ou inferiores a esse valor.
+
+- **Primeiro e Terceiro Quartil:**  
+  - **Q1:** ~470 pontos (25% das notas estão abaixo desse valor).  
+  - **Q3:** ~570 pontos (75% das notas estão abaixo desse valor).  
+
+- **Intervalo Interquartil (IIQ):**  
+  A amplitude entre Q1 e Q3 é relativamente curta, sugerindo que a maioria dos participantes obteve notas **próximas à mediana**.
+
+- **Mínimo e Máximo:**  
+  As hastes indicam que as notas variam de pouco acima de **400 pontos** até cerca de **620 pontos**.
+
+- **Outliers:**  
+  Pontos isolados na faixa de **300 pontos**, representando notas **significativamente baixas**.
+
+📌 **Resumo:**  
+A maior parte das notas de **Ciências Humanas** está concentrada entre **470** e **570 pontos**, com mediana em **500**.  
+A presença de **outliers** revela alguns casos atípicos de notas bem mais baixas que o padrão geral.
+
 
 * **NOTA\_CN\_CIENCIAS\_DA\_NATUREZA**
     ![Histograma](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
