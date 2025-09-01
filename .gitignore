@@ -5,7 +5,6 @@
 .Ruserdata
 
 # Pastas de outputs
-outputs/
 *.pdf
 *.html
 
