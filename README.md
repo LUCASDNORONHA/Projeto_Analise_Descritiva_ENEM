@@ -15,14 +15,23 @@ O projeto foi desenvolvido em **R** utilizando **RMarkdown** para gerar relatór
 ## Estrutura de Pastas
 
 Projeto_Analise_Descritiva_ENEM/
+
 │
+
 ├── data/ # Arquivos de dados (Excel, CSV)
+
 ├── outputs/ # Resultados gerados (PDF, gráficos, tabelas)
+
 ├── scripts/ # Scripts auxiliares em R
+
 ├── analise_enem.Rmd # Relatório principal em RMarkdown
+
 ├── analisedescritiva.Rmd # Relatório secundário (opcional)
+
 ├── Projeto_Analise_Descritiva_ENEM.Rproj
+
 ├── renv/ # Ambiente gerenciado pelo renv (opcional)
+
 └── README.md # Este arquivo
 
 
