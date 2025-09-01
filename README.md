@@ -60,15 +60,15 @@ A seguir, estão os gráficos e visualizações gerados para cada variável anal
 
 * **Município/Capital UF Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)
+
 A análise do gráfico de barras fornecida revela a concentração de participantes do ENEM 2023 em relação à realização da prova em uma capital de unidade federativa (UF).
 
 O gráfico mostra duas categorias:
 
-Sim: 6
+- **Sim:** 6  
+- **Não:** 14  
 
-Não: 14
-
-Essa representação indica que, na amostra analisada, a maioria dos participantes (14) realizou a prova do ENEM em municípios que não são capitais de suas respectivas UFs. Em contraste, um número menor de participantes (6) fez a prova em uma capital.
+Essa representação indica que, na amostra analisada, a maioria dos participantes (**14**) realizou a prova do ENEM em municípios que não são capitais de suas respectivas UFs. Em contraste, um número menor de participantes (**6**) fez a prova em uma capital.
 
     ![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
 
