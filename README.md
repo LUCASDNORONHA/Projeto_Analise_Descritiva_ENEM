@@ -19,10 +19,6 @@ O projeto foi desenvolvido em **R** utilizando **RMarkdown** para gerar relatór
 
 ## Estrutura de Pastas
 
-
-
-## Estrutura de Pastas
-
 Projeto_Analise_Descritiva_ENEM/
 
 │
