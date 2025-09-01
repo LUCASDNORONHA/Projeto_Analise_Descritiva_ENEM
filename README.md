@@ -6,34 +6,31 @@ Este projeto foi desenvolvido para a disciplina **Estatística**, ministrada pel
 ---
 
 ## Descrição
-Este projeto tem como objetivo realizar a **análise descritiva das variáveis do ENEM**.  
-O relatório inclui:  
+Este projeto tem como objetivo realizar a **análise descritiva das variáveis do ENEM**, resolvendo o seguinte problema:
 
-- Tabelas de frequência e gráficos (barras e pizza) para variáveis qualitativas  
-- Estatísticas descritivas, histogramas e boxplots para variáveis quantitativas  
-- Texto automático descrevendo cada variável  
+> Na base de dados destinada a cada aluno, fazer a análise descritiva das variáveis do ENEM.  
+> Nas variáveis qualitativas, gerar **tabelas de frequência** e gráficos de **barras ou pizza**.  
+> Nas variáveis quantitativas, extrair **estatísticas descritivas** e gerar **histogramas e boxplots**.  
+> Por fim, produzir uma **análise descritiva escrita** em um parágrafo para cada variável.  
+> Utilizar **Python e/ou R e/ou SAS**.
 
-O projeto foi desenvolvido em **R** utilizando **RMarkdown** para gerar relatórios em PDF.
+O relatório foi desenvolvido em **R**, usando **RMarkdown** para gerar os gráficos e as análises automáticas.  
 
 ---
 
 ## Estrutura de Pastas
 
 Projeto_Analise_Descritiva_ENEM/
-
 │
-
 ├── data/ 
-
-├── outputs/
-
+├── outputs/ 
+│ ├── graficos/
+│ ├── qualitativas/
+│ └── quantitativas/
 ├── scripts/ 
-
-├── analise_enem.Rmd
-
+├── analise_enem.Rmd #
 ├── Projeto_Analise_Descritiva_ENEM.Rproj
-
-└── README.md
+└── README.md 
 
 
 ---
