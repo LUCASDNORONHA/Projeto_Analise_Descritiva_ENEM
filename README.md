@@ -53,14 +53,11 @@ Projeto_Analise_Descritiva_ENEM/
 ```r
 install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
 
-# Exemplo para variáveis qualitativas
-library(ggplot2)
+### TP_LINGUA
+![Gráfico de Barras TP_LINGUA](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
 
-ggplot(enem, aes(x=TP_LINGUA)) +
-  geom_bar(fill="steelblue") +
-  labs(title="TP_LINGUA - Gráfico de Barras", x="Língua", y="Frequência") +
-  theme_minimal()
+### NOTA_MT_MATEMATICA
+![Histograma NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
+![Boxplot NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
 
-# Salvar
-ggsave("outputs/graficos/qualitativas/TP_LINGUA_barras.png", width=6, height=4)
 
