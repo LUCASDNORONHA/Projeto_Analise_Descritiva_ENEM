@@ -99,6 +99,13 @@ Isso sugere uma alta concentração de participantes no **Rio de Janeiro**, enqu
 
 ![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
 
+O gráfico de pizza apresenta a mesma distribuição de frequência por município, mas de uma forma proporcional.
+
+A visualização confirma a análise do gráfico de barras anterior, mostrando que a fatia correspondente ao **Rio de Janeiro** é a maior e mais destacada, indicando que esse município concentra a maior proporção de participantes na amostra.
+
+As demais fatias, representando os outros municípios, são de tamanho similar e significativamente menores que a do Rio de Janeiro. Isso demonstra que a maioria dos municípios listados na amostra tem uma proporção de participantes muito pequena e similar entre si, enquanto o Rio de Janeiro é um polo de prova mais expressivo para este conjunto de dados.
+
+
 * **Nome\_UF\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
     ![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
