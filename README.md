@@ -33,7 +33,7 @@ Projeto_Analise_Descritiva_ENEM/
 
 ├── Projeto_Analise_Descritiva_ENEM.Rproj
 
-└── README.md =
+└── README.md
 
 
 ---
