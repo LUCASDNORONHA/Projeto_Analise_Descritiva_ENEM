@@ -23,13 +23,21 @@ O relatório foi desenvolvido em **R**, usando **RMarkdown** para gerar os gráf
 Projeto_Analise_Descritiva_ENEM/
 │
 ├── data/ 
+
 ├── outputs/ 
+
 │ ├── graficos/
+
 │ ├── qualitativas/
+
 │ └── quantitativas/
+
 ├── scripts/ 
-├── analise_enem.Rmd #
+
+├── analise_enem.Rmd 
+
 ├── Projeto_Analise_Descritiva_ENEM.Rproj
+
 └── README.md 
 
 
@@ -44,3 +52,15 @@ Projeto_Analise_Descritiva_ENEM/
 
 ```r
 install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
+
+# Exemplo para variáveis qualitativas
+library(ggplot2)
+
+ggplot(enem, aes(x=TP_LINGUA)) +
+  geom_bar(fill="steelblue") +
+  labs(title="TP_LINGUA - Gráfico de Barras", x="Língua", y="Frequência") +
+  theme_minimal()
+
+# Salvar
+ggsave("outputs/graficos/qualitativas/TP_LINGUA_barras.png", width=6, height=4)
+
