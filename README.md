@@ -86,7 +86,18 @@ O gráfico de pizza é ideal para visualizar a representatividade proporcional d
 
 * **NO\_MUNICIPIO\_PROVA**
     ![Gráfico de Barras](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)
-    ![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
+
+O gráfico de barras detalha a frequência de participantes do ENEM 2023 por município, em uma amostra específica.
+
+A visualização mostra a distribuição dos participantes entre diversos municípios, com destaque para a frequência de cada um. A análise revela:
+
+- **Rio de Janeiro:** 3 participantes na amostra (maior frequência).
+- **Ananindeua, Batalha, Brasilândia de Minas, Campinas, Canoas, Chapadinha, Formosa, Jataí, Macaé, Macapá, Maracanaú, Natal, Palhoça, Queimadas, Santo André, Sobral e Teresina:** 1 participante cada.
+
+Isso sugere uma alta concentração de participantes no **Rio de Janeiro**, enquanto os demais municípios da amostra apresentam uma distribuição mais dispersa e com menor número de participantes, refletindo a distribuição populacional e de locais de prova.
+
+
+![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
 
 * **Nome\_UF\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
