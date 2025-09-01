@@ -53,7 +53,7 @@ Para replicar a análise, siga os passos abaixo:
 
 ---
 
-# Análise Descritiva - ENEM 2023
+# Análise Descritiva
 
 Este documento apresenta a análise descritiva das variáveis quantitativas e qualitativas dos microdados do ENEM 2023.
 
@@ -367,7 +367,47 @@ A presença de **outliers** revela alguns casos atípicos de notas bem mais baix
 
 * **NOTA\_CN\_CIENCIAS\_DA\_NATUREZA**
     ![Histograma](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+
+O histograma ilustra a distribuição de frequência das notas dos participantes do **ENEM 2023** na prova de **Ciências da Natureza**, com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Distribuição das Notas:**  
+  As notas mais frequentes estão concentradas em torno de **400** e **470 pontos**, com **três participantes** em cada faixa.  
+  A distribuição é **bastante dispersa**, com valores variando de aproximadamente **350** até **700 pontos**.
+
+- **Medidas de Tendência Central:**  
+  - **Mediana (linha verde pontilhada):** ~**470 pontos**, indicando que metade dos participantes teve notas iguais ou inferiores a esse valor.  
+  - **Média (linha vermelha pontilhada):** ~**490 pontos**, posicionada **um pouco acima da mediana**, sugerindo uma distribuição **levemente assimétrica**.  
+
+📌 **Resumo:**  
+A maior concentração de notas está entre **400 e 470 pontos**, com a média e mediana próximas, reforçando que a distribuição é **quase simétrica**, mas com **dispersão considerável** em torno dessas faixas.
+
+![Boxplot](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+
+O boxplot fornece um resumo estatístico das notas de **Ciências da Natureza** do **ENEM 2023**, com base em uma amostra de microdados.  
+Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores atípicos**.
+
+A análise do boxplot mostra:
+
+- **Mediana:**  
+  A linha **verde pontilhada** dentro da caixa marca a **mediana (~470 pontos)**, indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
+
+- **Média:**  
+  A linha **vermelha pontilhada** está próxima de **490 pontos**, ligeiramente acima da mediana, sugerindo que a distribuição não é perfeitamente simétrica.
+
+- **Quartis:**  
+  - **Q1 (~420 pontos):** 25% dos participantes têm notas iguais ou inferiores a este valor.  
+  - **Q3 (~550 pontos):** 75% dos participantes têm notas iguais ou inferiores a este valor.  
+
+- **Intervalo Interquartil (IIQ):**  
+  A caixa, entre **420 e 550 pontos**, mostra que **50%** das notas estão nessa faixa, revelando uma **dispersão considerável**.
+
+- **Mínimo e Máximo:**  
+  As hastes se estendem de pouco acima de **350** até **quase 700 pontos**, sem presença de outliers visuais.
+
+📌 **Resumo:**  
+A maioria das notas está concentrada entre **420 e 550 pontos**, com mediana em **470**. A distribuição apresenta **boa variação**, mas não há outliers marcantes.
 
 * **NOTA\_LC\_LINGUAGENS\_E\_CODIGOS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
