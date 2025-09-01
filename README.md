@@ -73,7 +73,7 @@ Essa representação indica que, na amostra analisada, a maioria dos participant
     
 ![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
 
-O gráfico de pizza, também intitulado **"Distribuição - Município_Capital_UF_Prova"**, representa a mesma informação do gráfico de barras anterior, mas de uma maneira diferente.
+O gráfico de pizza representa a mesma informação do gráfico de barras anterior, mas de uma maneira diferente.
 
 Aqui, a distribuição dos participantes do ENEM 2023 é visualizada por meio de proporções. As duas categorias são:
 
