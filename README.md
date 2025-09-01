@@ -108,7 +108,19 @@ As demais fatias, representando os outros municípios, são de tamanho similar e
 
 * **Nome\_UF\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
-    ![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
+
+O gráfico de barras **"Distribuição - Nome_UF_Prova"** ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
+
+A análise do gráfico revela o seguinte padrão de distribuição:
+
+- **Rio de Janeiro:** 4 participantes (maior frequência na amostra).  
+- **São Paulo, Goiás e Ceará:** 2 participantes cada.  
+- **Santa Catarina, Rio Grande do Sul, Rio Grande do Norte, Piauí, Paraíba, Pará, Minas Gerais, Maranhão, Amapá e Alagoas:** 1 participante cada.
+
+Essa distribuição mostra que, enquanto alguns estados concentram um número maior de participantes, a maioria das UFs na amostra tem uma representação menor e mais uniforme.
+
+
+![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
 
 * **Regiao\_Nome\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
