@@ -1,114 +1,111 @@
-# Projeto: Análise Descritiva dos Dados do ENEM
+# Análise Descritiva dos Dados do ENEM
 
-## Disciplina
-Este projeto foi desenvolvido para a disciplina **Estatística**, ministrada pela professora **Simone de Araújo Góes Assis**, do curso de **Ciência de Dados e IA** do **IESB**.
-
----
-
-## Descrição
-Este projeto tem como objetivo realizar a **análise descritiva das variáveis do ENEM**, resolvendo o seguinte problema:
-
-> Na base de dados destinada a cada aluno, fazer a análise descritiva das variáveis do ENEM.  
-> Nas variáveis qualitativas, gerar **tabelas de frequência** e gráficos de **barras ou pizza**.  
-> Nas variáveis quantitativas, extrair **estatísticas descritivas** e gerar **histogramas e boxplots**.  
-> Por fim, produzir uma **análise descritiva escrita** em um parágrafo para cada variável.  
-> Utilizar **Python e/ou R e/ou SAS**.
-
-O relatório foi desenvolvido em **R**, usando **RMarkdown** para gerar os gráficos e as análises automáticas.  
+## Visão Geral do Projeto
+Este projeto foi desenvolvido para a disciplina de **Estatística** no curso de **Ciência de Dados e IA** no IESB. O objetivo principal é realizar uma **análise descritiva** de um conjunto de dados do **ENEM**. O projeto aborda a análise de variáveis qualitativas e quantitativas, gerando tabelas, estatísticas e visualizações para cada uma delas. Todo o trabalho foi realizado em **R**, utilizando **RMarkdown** para automatizar a geração de relatórios e gráficos.
 
 ---
 
-## Estrutura de Pastas
+## Metodologia
+
+O projeto seguiu a seguinte metodologia para a análise de cada variável:
+
+* **Variáveis Qualitativas**: foram geradas tabelas de frequência e visualizações como gráficos de barras e de pizza.
+* **Variáveis Quantitativas**: foram extraídas estatísticas descritivas (média, mediana, desvio padrão, etc.) e criados histogramas e boxplots.
+* **Análise Escrita**: para cada variável, foi elaborada uma análise descritiva em um parágrafo.
+
+---
+
+## Estrutura do Repositório
+A organização das pastas e arquivos facilita a navegação e a execução do projeto.
 
 Projeto_Analise_Descritiva_ENEM/
-│
-├── data/ 
+├── data/                      # Armazena o conjunto de dados brutos.
 
-├── outputs/ 
+├── outputs/                   # Contém os resultados e gráficos gerados.
 
-│ ├── graficos/
+│   ├── graficos/              # Armazena todas as visualizações.
 
-│ ├── qualitativas/
+│   │   ├── qualitativas/      # Gráficos de barras e pizza.
 
-│ └── quantitativas/
+│   │   └── quantitativas/     # Histogramas e boxplots.
 
-├── scripts/ 
+├── scripts/                   # Scripts auxiliares, se houver.
 
-├── analise_enem.Rmd 
+├── analise_enem.Rmd           # O script principal em RMarkdown.
 
-├── Projeto_Analise_Descritiva_ENEM.Rproj
+├── Projeto_Analise_Descritiva_ENEM.Rproj # Arquivo de projeto do RStudio
 
-└── README.md 
-
+└── README.md                  # Este arquivo.
 
 ---
 
-## Como Rodar
+## Como Rodar o Projeto
+Para replicar a análise, siga os passos abaixo:
 
-1. Abra o projeto no **RStudio**:  
-   Clique em `Projeto_Analise_Descritiva_ENEM.Rproj`.
+1.  Abra o arquivo `Projeto_Analise_Descritiva_ENEM.Rproj` no **RStudio** para carregar o projeto corretamente.
+2.  Instale os pacotes necessários rodando o seguinte comando no console do R:
 
-2. Instale os pacotes necessários (caso não estejam instalados):
+    ```r
+    install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
+    ```
 
-
-```r
-install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
-
-### TP_LINGUA
-![Gráfico de Barras TP_LINGUA](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
-
-```
-
-## Variáveis Qualitativas
-
-### Municipio/Capital UF Prova
-![Barras Municipio/Capital UF Prova](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)  
-![Pizza Municipio/Capital UF Prova](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)  
-
-### NO_MUNICIPIO_PROVA
-![Barras NO_MUNICIPIO_PROVA](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)  
-![Pizza NO_MUNICIPIO_PROVA](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)  
-
-### Nome_UF_Prova
-![Barras Nome_UF_Prova](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)  
-![Pizza Nome_UF_Prova](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)  
-
-### Regiao_Nome_Prova
-![Barras Regiao_Nome_Prova](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)  
-![Pizza Regiao_Nome_Prova](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)  
-
-### SG_UF_PROVA
-![Barras SG_UF_PROVA](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png)  
-![Pizza SG_UF_PROVA](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)  
-
-### TP_LINGUA
-![Barras TP_LINGUA](outputs/graficos/qualitativas/TP_LINGUA_barras.png)  
-![Pizza TP_LINGUA](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)  
+3.  Abra o arquivo `analise_enem.Rmd` e clique em **"Knit"** para gerar o relatório final em HTML, que incluirá todas as análises e gráficos.
 
 ---
 
-## Variáveis Quantitativas
+## Análise das Variáveis
+A seguir, estão os gráficos e visualizações gerados para cada variável analisada, divididos por tipo.
 
-### NOTA_CH_CIENCIAS_HUMANAS
-![Histograma NOTA_CH_CIENCIAS_HUMANAS](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)  
-![Boxplot NOTA_CH_CIENCIAS_HUMANAS](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)  
+### Variáveis Qualitativas
 
-### NOTA_CN_CIENCIAS_DA_NATUREZA
-![Histograma NOTA_CN_CIENCIAS_DA_NATUREZA](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)  
-![Boxplot NOTA_CN_CIENCIAS_DA_NATUREZA](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)  
+* **Município/Capital UF Prova**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
 
-### NOTA_LC_LINGUAGENS_E_CODIGOS
-![Histograma NOTA_LC_LINGUAGENS_E_CODIGOS](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)  
-![Boxplot NOTA_LC_LINGUAGENS_E_CODIGOS](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)  
+* **NO\_MUNICIPIO\_PROVA**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
 
-### NOTA_MT_MATEMATICA
-![Histograma NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)  
-![Boxplot NOTA_MT_MATEMATICA](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)  
+* **Nome\_UF\_Prova**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
 
-### NOTA_REDACAO
-![Histograma NOTA_REDACAO](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)  
-![Boxplot NOTA_REDACAO](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)  
+* **Regiao\_Nome\_Prova**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
 
-### NOTA_MEDIA_5_NOTAS
-![Histograma NOTA_MEDIA_5_NOTAS](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)  
-![Boxplot NOTA_MEDIA_5_NOTAS](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)  
+* **SG\_UF\_PROVA**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
+
+* **TP\_LINGUA**
+    ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
+    ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
+
+---
+
+### Variáveis Quantitativas
+
+* **NOTA\_CH\_CIENCIAS\_HUMANAS**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+
+* **NOTA\_CN\_CIENCIAS\_DA\_NATUREZA**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+
+* **NOTA\_LC\_LINGUAGENS\_E\_CODIGOS**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
+
+* **NOTA\_MT\_MATEMATICA**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+
+* **NOTA\_REDACAO**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
+
+* **NOTA\_MEDIA\_5\_NOTAS**
+    ![Histograma](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
+    ![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
