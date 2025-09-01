@@ -18,21 +18,17 @@ Projeto_Analise_Descritiva_ENEM/
 
 │
 
-├── data/ # Arquivos de dados (Excel, CSV)
+├── data/ 
 
-├── outputs/ # Resultados gerados (PDF, gráficos, tabelas)
+├── outputs/
 
-├── scripts/ # Scripts auxiliares em R
+├── scripts/ 
 
-├── analise_enem.Rmd # Relatório principal em RMarkdown
-
-├── analisedescritiva.Rmd # Relatório secundário (opcional)
+├── analise_enem.Rmd
 
 ├── Projeto_Analise_Descritiva_ENEM.Rproj
 
-├── renv/ # Ambiente gerenciado pelo renv (opcional)
-
-└── README.md # Este arquivo
+└── README.md =
 
 
 ---
