@@ -202,15 +202,14 @@ Essa visualização deixa claro que, na amostra analisada, a escolha pela língu
 
 ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
 
-O gráfico de pizza representa a distribuição proporcional da escolha de língua estrangeira (Inglês ou Espanhol) por participantes do ENEM 2023, com base em uma amostra.
+O gráfico de pizza **"Distribuição - TP_LINGUA"** representa a distribuição proporcional da escolha de língua estrangeira (Inglês ou Espanhol) por participantes do ENEM 2023, com base em uma amostra.
 
-A visualização confirma os dados do gráfico de barras anterior, mas de uma forma que enfatiza a proporção de cada escolha:
+A visualização confirma os dados do gráfico de barras anterior, enfatizando as proporções:
 
-A fatia correspondente a Espanhol é a maior, indicando que a maioria dos participantes na amostra selecionou essa língua estrangeira.
+- **Espanhol:** maior fatia, indicando que a maioria dos participantes selecionou essa língua.  
+- **Inglês:** fatia menor, confirmando que foi a segunda opção mais popular.  
 
-A fatia de Inglês é um pouco menor, confirmando que foi a segunda opção mais popular.
-
-Este gráfico é ideal para mostrar de forma rápida e clara a pequena diferença na preferência de língua estrangeira entre os candidatos da amostra, reforçando a leve vantagem da escolha por Espanhol.
+Este gráfico é ideal para mostrar de forma rápida e clara a pequena diferença na preferência de língua estrangeira entre os candidatos da amostra, reforçando a leve vantagem da escolha por **Espanhol**.
 
 ---
 
