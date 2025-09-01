@@ -176,7 +176,7 @@ Essa distribuição mostra que, enquanto alguns estados concentram um número ma
 
 ![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
 
-O gráfico de pizza **"Distribuição - SG_UF_PROVA"** representa a mesma distribuição de participantes por Unidade da Federação (UF) em uma amostra de dados do ENEM 2023, mas de forma proporcional.
+O gráfico de pizza representa a mesma distribuição de participantes por Unidade da Federação (UF) em uma amostra de dados do ENEM 2023, mas de forma proporcional.
 
 A visualização em pizza confirma a análise do gráfico de barras anterior, enfatizando as proporções:
 
@@ -189,7 +189,28 @@ Este gráfico é eficaz para demonstrar visualmente que, na amostra analisada, a
 
 * **TP\_LINGUA**
     ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
-    ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
+
+O gráfico de barras mostra a frequência da opção de língua estrangeira (Inglês ou Espanhol) escolhida pelos participantes na amostra de dados do ENEM 2023.
+
+A análise do gráfico revela o seguinte:
+
+- **Espanhol:** 11 participantes (língua mais escolhida).  
+- **Inglês:** 9 participantes.  
+
+Essa visualização deixa claro que, na amostra analisada, a escolha pela língua **Espanhola** foi mais frequente do que pela língua **Inglesa**.
+
+
+![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
+
+O gráfico de pizza representa a distribuição proporcional da escolha de língua estrangeira (Inglês ou Espanhol) por participantes do ENEM 2023, com base em uma amostra.
+
+A visualização confirma os dados do gráfico de barras anterior, mas de uma forma que enfatiza a proporção de cada escolha:
+
+A fatia correspondente a Espanhol é a maior, indicando que a maioria dos participantes na amostra selecionou essa língua estrangeira.
+
+A fatia de Inglês é um pouco menor, confirmando que foi a segunda opção mais popular.
+
+Este gráfico é ideal para mostrar de forma rápida e clara a pequena diferença na preferência de língua estrangeira entre os candidatos da amostra, reforçando a leve vantagem da escolha por Espanhol.
 
 ---
 
