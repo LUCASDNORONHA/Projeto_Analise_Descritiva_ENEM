@@ -135,7 +135,20 @@ O gráfico de pizza é eficaz para demonstrar visualmente que, na amostra analis
 
 * **Regiao\_Nome\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
-    ![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
+
+O gráfico de barras **"Distribuição - Regiao_Nome_Prova"** mostra a frequência de participantes do ENEM 2023 por região do Brasil em uma amostra de dados.
+
+A análise do gráfico revela uma distribuição bem clara entre as regiões:
+
+- **Sudeste e Nordeste:** 7 participantes cada (maior frequência).  
+- **Sul, Norte e Centro-Oeste:** 2 participantes cada (frequência significativamente menor).  
+
+Essa visualização mostra que, na amostra analisada, as regiões **Sudeste e Nordeste** concentram a maioria dos candidatos, enquanto as outras três regiões têm uma representação mais baixa.
+
+
+![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
+
+
 
 * **SG\_UF\_PROVA**
     ![Gráfico de Barras](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png)
