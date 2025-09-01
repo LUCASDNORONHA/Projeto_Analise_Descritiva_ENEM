@@ -1,0 +1,98 @@
+---
+title: "Análise Descritiva dos Dados do ENEM"
+author: "Lucas Dias Noronha"
+date: "`r format(Sys.Date(), '%m/%Y')`"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r, message=FALSE, warning=FALSE}
+# --- Pacotes ---
+library(tidyverse)
+library(summarytools)
+library(plotrix)
+library(knitr)
+library(kableExtra)
+library(readxl)
+
+# --- Carregar arquivo ---
+data_path <- "data/2512120033_Lucas Dias Noronha_15.xlsx" 
+enem <- read_excel(data_path)
+
+# --- Separar variáveis ---
+qualitativas <- enem %>% select_if(is.character) # texto ou fatores
+quantitativas <- enem %>% select_if(is.numeric)
+
+# --- Variáveis Qualitativas ---
+for (var in names(qualitativas)) {
+  cat("\n### Variável:", var, "\n")
+  
+  freq_abs <- table(enem[[var]])
+  freq_rel <- round(prop.table(freq_abs)*100,2)
+  
+  tabela <- data.frame(Categoria=names(freq_abs),
+                       Frequencia=as.vector(freq_abs),
+                       Percentual=as.vector(freq_rel))
+  kable(tabela, caption=paste("Distribuição da variável", var)) %>%
+    kable_styling(bootstrap_options = c("striped","hover","condensed"))
+  
+  print(
+    ggplot(enem, aes_string(x=var)) +
+      geom_bar(fill="steelblue") +
+      labs(title=paste("Gráfico de Barras -", var), x=var, y="Frequência") +
+      theme_minimal()
+  )
+  
+  pie(freq_abs, main=paste("Gráfico de Pizza -", var), col=rainbow(length(freq_abs)))
+}
+
+# --- Variáveis Quantitativas ---
+for (var in names(quantitativas)) {
+  cat("\n### Variável:", var, "\n")
+  
+  resumo <- descr(enem[[var]])
+  print(resumo)
+  
+  print(
+    ggplot(enem, aes_string(x=var)) +
+      geom_histogram(bins=30, fill="lightblue", color="black") +
+      labs(title=paste("Histograma -", var), x=var, y="Frequência") +
+      theme_minimal()
+  )
+  
+  print(
+    ggplot(enem, aes_string(y=var)) +
+      geom_boxplot(fill="orange") +
+      labs(title=paste("Boxplot -", var), y=var) +
+      theme_minimal()
+  )
+}
+
+# --- Texto Automático Quantitativas ---
+for (var in names(quantitativas)) {
+  media <- mean(enem[[var]], na.rm=TRUE)
+  mediana <- median(enem[[var]], na.rm=TRUE)
+  dp <- sd(enem[[var]], na.rm=TRUE)
+  min_val <- min(enem[[var]], na.rm=TRUE)
+  max_val <- max(enem[[var]], na.rm=TRUE)
+  
+  cat(paste0(
+    "\n**", var, ":** Média ", round(media,2),
+    ", mediana ", round(mediana,2),
+    ", desvio padrão ", round(dp,2),
+    ", mínimo ", min_val,
+    ", máximo ", max_val, "\n\n"
+  ))
+}
+
+# --- Texto Automático Qualitativas ---
+for (var in names(qualitativas)) {
+  freq_abs <- table(enem[[var]])
+  if(length(freq_abs) > 0){
+    maior_cat <- names(freq_abs)[which.max(freq_abs)]
+    cat(paste0(
+      "**", var, ":** A categoria mais frequente é '", maior_cat,
+      "', com ", max(freq_abs), " ocorrências.\n\n"
+    ))
+  }
+}

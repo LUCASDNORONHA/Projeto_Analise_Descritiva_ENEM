@@ -1,0 +1,13 @@
+# Arquivos do RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Pastas de outputs
+outputs/
+*.pdf
+*.html
+
+# Ambiente renv
+renv/
