@@ -1,5 +1,10 @@
 # Projeto: Análise Descritiva dos Dados do ENEM
 
+## Disciplina
+Este projeto foi desenvolvido para a disciplina **Estatística**, ministrada pela professora **Simone de Araújo Góes Assis**, do curso de **Ciência de Dados e IA** do **IESB**.
+
+---
+
 ## Descrição
 Este projeto tem como objetivo realizar a **análise descritiva das variáveis do ENEM**.  
 O relatório inclui:  
@@ -11,6 +16,10 @@ O relatório inclui:
 O projeto foi desenvolvido em **R** utilizando **RMarkdown** para gerar relatórios em PDF.
 
 ---
+
+## Estrutura de Pastas
+
+
 
 ## Estrutura de Pastas
 
