@@ -109,7 +109,7 @@ As demais fatias, representando os outros municípios, são de tamanho similar e
 * **Nome\_UF\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
 
-O gráfico de barras **"Distribuição - Nome_UF_Prova"** ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
+O gráfico de barras ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
 
 A análise do gráfico revela o seguinte padrão de distribuição:
 
@@ -121,6 +121,17 @@ Essa distribuição mostra que, enquanto alguns estados concentram um número ma
 
 
 ![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
+
+O gráfico de pizza mostra a distribuição proporcional dos participantes do ENEM 2023 por Unidade da Federação (UF) em uma amostra.
+
+A visualização em pizza confirma os dados do gráfico de barras anterior, mas de uma forma que enfatiza as proporções. A análise revela o seguinte:
+
+- A fatia correspondente ao **Rio de Janeiro** é a maior de todas, refletindo sua maior frequência de participantes na amostra.  
+- As fatias de **São Paulo, Goiás e Ceará** são as próximas em tamanho, confirmando que esses estados têm uma proporção de participantes maior do que os demais.  
+- As fatias menores e de tamanhos semelhantes representam o restante das UFs, que registraram apenas um participante cada.
+
+O gráfico de pizza é eficaz para demonstrar visualmente que, na amostra analisada, a maioria dos participantes se concentra em alguns poucos estados, com o **Rio de Janeiro** sendo o mais proeminente.
+
 
 * **Regiao\_Nome\_Prova**
     ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
