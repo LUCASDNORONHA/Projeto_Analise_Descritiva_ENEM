@@ -462,7 +462,27 @@ A maioria das notas de **Linguagens e Códigos** está concentrada entre **520 e
 
 * **NOTA\_MT\_MATEMATICA**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+
+O histograma mostra a frequência das notas dos participantes do **ENEM 2023** na prova de **Matemática**, com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Distribuição das Notas:**  
+  A maior concentração de notas está em torno de **510 pontos**, com **3 participantes**.  
+  Outros picos de frequência ocorrem nas faixas de **410, 420, 650 e 790 pontos**, com **2 participantes** em cada.  
+  A distribuição é bastante **dispersa**, com notas variando de aproximadamente **400 a 800 pontos**.
+
+- **Medidas de Tendência Central:**  
+  - **Mediana (linha verde pontilhada):** ~**510 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
+  - **Média (linha vermelha pontilhada):** ~**560 pontos**, significativamente acima da mediana, sugerindo **assimetria** na distribuição devido a notas altas que puxam a média para cima.
+
+📌 **Resumo:**  
+A maior concentração de notas de **Matemática** está na faixa de **510 pontos**, mas a presença de notas muito altas eleva a média acima da mediana, mostrando que a distribuição é **assimétrica e dispersa**.
+
+
+
+
+![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
 
 * **NOTA\_REDACAO**
     ![Histograma](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
