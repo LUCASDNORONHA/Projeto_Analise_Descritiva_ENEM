@@ -1,22 +1,22 @@
-# Análise Descritiva dos Dados do ENEM
+## Análise Exploratória de Dados do ENEM 2023
 
 ## Visão Geral do Projeto
-Estudo de caso que foi desenvolvido para a disciplina de **Estatística** no curso de **Ciência de Dados e IA** no IESB. O objetivo principal é realizar uma **análise descritiva** de um conjunto de dados do **ENEM**. O projeto aborda a análise de variáveis qualitativas e quantitativas, gerando tabelas, estatísticas e visualizações para cada uma delas. Todo o trabalho foi realizado em **R**, utilizando **RMarkdown** para automatizar a geração de relatórios e gráficos.
+Este projeto consiste em uma análise exploratória dos microdados de uma amostra do ENEM 2023. O objetivo é extrair informações descritivas de variáveis qualitativas e quantitativas por meio de estatísticas sumarizadas e visualizações. A análise, desenvolvida em **R** e documentada em **R Markdown**, visa identificar padrões, tendências de desempenho e características da amostra de participantes.
 
 ---
 
 ## Metodologia
+A análise seguiu um processo estruturado, utilizando técnicas de estatística descritiva:
+- **Variáveis Qualitativas:** Foram exploradas por meio de **tabelas de frequência**, **gráficos de barras** e **gráficos de pizza**, que ajudam a entender a distribuição de categorias.
+- **Variáveis Quantitativas:** A distribuição e a dispersão foram analisadas com **estatísticas sumarizadas** (média, mediana, desvio padrão, etc.), **histogramas** e **boxplots**.
 
-O projeto seguiu a seguinte metodologia para a análise de cada variável:
-
-* **Variáveis Qualitativas**: foram geradas tabelas de frequência e visualizações como gráficos de barras e de pizza.
-* **Variáveis Quantitativas**: foram extraídas estatísticas descritivas (média, mediana, desvio padrão, etc.) e criados histogramas e boxplots.
-* **Análise Escrita**: para cada variável, foi elaborada uma análise descritiva em um parágrafo.
+Para cada variável, os resultados estatísticos e visuais foram acompanhados de uma interpretação para contextualizar os dados e extrair *insights*.
 
 ---
 
 ## Estrutura do Repositório
-A organização das pastas e arquivos facilita a navegação e a execução do projeto.
+A organização do projeto foi pensada para garantir reprodutibilidade e facilitar a navegação.
+---
 
 Projeto_Analise_Descritiva_ENEM/
 ├── data/                      # Armazena o conjunto de dados brutos.
@@ -38,544 +38,136 @@ Projeto_Analise_Descritiva_ENEM/
 └── README.md                  # Este arquivo.
 
 ---
+---
 
-## Como Rodar o Projeto
-Para replicar a análise, siga os passos abaixo:
+## Como Reproduzir a Análise
+Para replicar a análise e gerar o relatório em HTML, siga os passos abaixo no RStudio:
 
-1.  Abra o arquivo `Projeto_Analise_Descritiva_ENEM.Rproj` no **RStudio** para carregar o projeto corretamente.
-2.  Instale os pacotes necessários rodando o seguinte comando no console do R:
-
+1. Abra o arquivo `analise_enem.Rmd` diretamente no RStudio.
+2. Instale os pacotes necessários executando o seguinte comando no console do R:
+   
     ```r
-    install.packages(c("tidyverse", "summarytools", "plotrix", "knitr", "kableExtra", "readxl"))
+    install.packages(c("tidyverse", "summarytools", "knitr", "kableExtra"))
     ```
 
-3.  Abra o arquivo `analise_enem.Rmd` e clique em **"Knit"** para gerar o relatório final em HTML, que incluirá todas as análises e gráficos.
+3. Com os pacotes instalados, clique em **"Knit"** no RStudio para renderizar o relatório e gerar o arquivo `analise_enem.html` na pasta principal do projeto, junto com os gráficos e tabelas na pasta `outputs`.
 
 ---
 
-# Análise Descritiva
+## Resultados da Análise Descritiva
 
-Este documento apresenta a análise descritiva das variáveis quantitativas e qualitativas dos microdados do ENEM 2023.
-
-## Variáveis Quantitativas
-
-### NOTA_CN_CIENCIAS_DA_NATUREZA
-- Média: 492.68
-- Mediana: 471.65
-- Desvio padrão: 91.67
-- Intervalo interquartil (IQR): 127.75
-- Valores mínimo e máximo: 363.3 e 696.3
-- Observação: A média e a mediana sugerem assimetria na distribuição.
-
-
-### NOTA_CH_CIENCIAS_HUMANAS
-- Média: 510.26
-- Mediana: 511.05
-- Desvio padrão: 89.66
-- Intervalo interquartil (IQR): 98.48
-- Valores mínimo e máximo: 307.4 e 650.4
-- Observação: A média e a mediana são próximas, indicando distribuição relativamente simétrica.
-
-
-### NOTA_LC_LINGUAGENS_E_CODIGOS
-- Média: 542.57
-- Mediana: 555.9
-- Desvio padrão: 59.64
-- Intervalo interquartil (IQR): 47.73
-- Valores mínimo e máximo: 359.5 e 621.2
-- Observação: A média e a mediana sugerem assimetria na distribuição.
-
-
-### NOTA_MT_MATEMATICA
-- Média: 538.08
-- Mediana: 509.15
-- Desvio padrão: 123.61
-- Intervalo interquartil (IQR): 202
-- Valores mínimo e máximo: 392.5 e 794.6
-- Observação: A média e a mediana sugerem assimetria na distribuição.
-
-
-### NOTA_REDACAO
-- Média: 669
-- Mediana: 670
-- Desvio padrão: 180.11
-- Intervalo interquartil (IQR): 250
-- Valores mínimo e máximo: 280 e 920
-- Observação: A média e a mediana são próximas, indicando distribuição relativamente simétrica.
-
-
-### NOTA_MEDIA_5_NOTAS
-- Média: 550.52
-- Mediana: 538.21
-- Desvio padrão: 87.65
-- Intervalo interquartil (IQR): 109.03
-- Valores mínimo e máximo: 399.86 e 726.06
-- Observação: A média e a mediana são próximas, indicando distribuição relativamente simétrica.
-
-
-## Variáveis Qualitativas
-
-### Regiao_Nome_Prova
-- Categoria mais frequente: **Nordeste** (7 participantes, 35%)
-- Categoria menos frequente: **Centro-Oeste** (2 participantes, 10%)
-- Observação: Não há uma categoria dominante, indicando diversidade de respostas.
-
-
-### SG_UF_PROVA
-- Categoria mais frequente: **RJ** (4 participantes, 20%)
-- Categoria menos frequente: **AL** (1 participantes, 5%)
-- Observação: Não há uma categoria dominante, indicando diversidade de respostas.
-
-
-### Nome_UF_Prova
-- Categoria mais frequente: **Rio de Janeiro** (4 participantes, 20%)
-- Categoria menos frequente: **Alagoas** (1 participantes, 5%)
-- Observação: Não há uma categoria dominante, indicando diversidade de respostas.
-
-
-### NO_MUNICIPIO_PROVA
-- Categoria mais frequente: **Rio de Janeiro** (3 participantes, 15%)
-- Categoria menos frequente: **Ananindeua** (1 participantes, 5%)
-- Observação: Não há uma categoria dominante, indicando diversidade de respostas.
-
-
-### Municipio_Capital_UF_Prova
-- Categoria mais frequente: **Não** (14 participantes, 70%)
-- Categoria menos frequente: **Sim** (6 participantes, 30%)
-- Observação: Há forte concentração nessa categoria.
-
-
-### TP_LINGUA
-- Categoria mais frequente: **Espanhol** (11 participantes, 55%)
-- Categoria menos frequente: **Inglês** (9 participantes, 45%)
-- Observação: Há forte concentração nessa categoria.
-
-
----
-
-# Gráficos 
-
-## Análise das Variáveis
-A seguir, estão os gráficos e visualizações gerados para cada variável analisada, divididos por tipo.
-
-### Variáveis Qualitativas
-
-* **Município/Capital UF Prova**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)
-
-A análise do gráfico de barras fornecida revela a concentração de participantes do ENEM 2023 em relação à realização da prova em uma capital de unidade federativa (UF).
-
-O gráfico mostra duas categorias:
-
-- **Sim:** 6  
-- **Não:** 14  
-
-Essa representação indica que, na amostra analisada, a maioria dos participantes (**14**) realizou a prova do ENEM em municípios que não são capitais de suas respectivas UFs. Em contraste, um número menor de participantes (**6**) fez a prova em uma capital.
-
-    
-![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
-
-O gráfico de pizza representa a mesma informação do gráfico de barras anterior, mas de uma maneira diferente.
-
-Aqui, a distribuição dos participantes do ENEM 2023 é visualizada por meio de proporções. As duas categorias são:
-
-- **Não (cor azul escura):** Este setor, o maior do gráfico, representa a maioria dos participantes que fizeram a prova em municípios que não são capitais.
-- **Sim (cor amarela):** Este setor, menor que o anterior, representa a proporção de participantes que realizaram a prova em uma capital de unidade federativa (UF).
-
-O gráfico de pizza é ideal para visualizar a representatividade proporcional de cada grupo em relação ao todo. O tamanho de cada fatia corresponde diretamente à quantidade de participantes em cada categoria, deixando claro que a maioria dos participantes da amostra realizou a prova fora de uma capital.
-
-
-
-* **NO\_MUNICIPIO\_PROVA**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)
-
-O gráfico de barras detalha a frequência de participantes do ENEM 2023 por município, em uma amostra específica.
-
-A visualização mostra a distribuição dos participantes entre diversos municípios, com destaque para a frequência de cada um. A análise revela:
-
-- **Rio de Janeiro:** 3 participantes na amostra (maior frequência).
-- **Ananindeua, Batalha, Brasilândia de Minas, Campinas, Canoas, Chapadinha, Formosa, Jataí, Macaé, Macapá, Maracanaú, Natal, Palhoça, Queimadas, Santo André, Sobral e Teresina:** 1 participante cada.
-
-Isso sugere uma alta concentração de participantes no **Rio de Janeiro**, enquanto os demais municípios da amostra apresentam uma distribuição mais dispersa e com menor número de participantes, refletindo a distribuição populacional e de locais de prova.
-
-
-![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
-
-O gráfico de pizza apresenta a mesma distribuição de frequência por município, mas de uma forma proporcional.
-
-A visualização confirma a análise do gráfico de barras anterior, mostrando que a fatia correspondente ao **Rio de Janeiro** é a maior e mais destacada, indicando que esse município concentra a maior proporção de participantes na amostra.
-
-As demais fatias, representando os outros municípios, são de tamanho similar e significativamente menores que a do Rio de Janeiro. Isso demonstra que a maioria dos municípios listados na amostra tem uma proporção de participantes muito pequena e similar entre si, enquanto o Rio de Janeiro é um polo de prova mais expressivo para este conjunto de dados.
-
-
-* **Nome\_UF\_Prova**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
-
-O gráfico de barras ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
-
-A análise do gráfico revela o seguinte padrão de distribuição:
-
-- **Rio de Janeiro:** 4 participantes (maior frequência na amostra).  
-- **São Paulo, Goiás e Ceará:** 2 participantes cada.  
-- **Santa Catarina, Rio Grande do Sul, Rio Grande do Norte, Piauí, Paraíba, Pará, Minas Gerais, Maranhão, Amapá e Alagoas:** 1 participante cada.
-
-Essa distribuição mostra que, enquanto alguns estados concentram um número maior de participantes, a maioria das UFs na amostra tem uma representação menor e mais uniforme.
-
-
-![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
-
-O gráfico de pizza mostra a distribuição proporcional dos participantes do ENEM 2023 por Unidade da Federação (UF) em uma amostra.
-
-A visualização em pizza confirma os dados do gráfico de barras anterior, mas de uma forma que enfatiza as proporções. A análise revela o seguinte:
-
-- A fatia correspondente ao **Rio de Janeiro** é a maior de todas, refletindo sua maior frequência de participantes na amostra.  
-- As fatias de **São Paulo, Goiás e Ceará** são as próximas em tamanho, confirmando que esses estados têm uma proporção de participantes maior do que os demais.  
-- As fatias menores e de tamanhos semelhantes representam o restante das UFs, que registraram apenas um participante cada.
-
-O gráfico de pizza é eficaz para demonstrar visualmente que, na amostra analisada, a maioria dos participantes se concentra em alguns poucos estados, com o **Rio de Janeiro** sendo o mais proeminente.
-
-
-* **Regiao\_Nome\_Prova**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
-
-O gráfico de barras mostra a frequência de participantes do ENEM 2023 por região do Brasil em uma amostra de dados.
-
-A análise do gráfico revela uma distribuição bem clara entre as regiões:
-
-- **Sudeste e Nordeste:** 7 participantes cada (maior frequência).  
-- **Sul, Norte e Centro-Oeste:** 2 participantes cada (frequência significativamente menor).  
-
-Essa visualização mostra que, na amostra analisada, as regiões **Sudeste e Nordeste** concentram a maioria dos candidatos, enquanto as outras três regiões têm uma representação mais baixa.
-
-
-![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
-
-O gráfico de pizza representa a mesma distribuição de participantes do ENEM 2023 por região, agora de forma proporcional.
-
-A visualização em pizza confirma a análise do gráfico de barras anterior:
-
-- **Sudeste e Nordeste:** maiores fatias, de tamanhos iguais, indicando que essas duas regiões têm a maior e igual proporção de participantes na amostra.  
-- **Sul, Norte e Centro-Oeste:** fatias menores e semelhantes entre si, representando a menor proporção de participantes nessas regiões.
-
-Este gráfico é eficaz para visualizar rapidamente a disparidade na distribuição de participantes, reforçando que as regiões **Sudeste e Nordeste**, juntas, concentram a maior parte da amostra.
-
-
-
-
-* **SG\_UF\_PROVA**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/SG_UF_PROVA_barras.png
-
-O gráfico de barras ilustra a frequência de participantes do ENEM 2023 por estado (Unidade da Federação - UF) em uma amostra de dados.
-
-A análise do gráfico revela o seguinte padrão de distribuição:
-
-- **RJ (Rio de Janeiro):** 4 participantes (maior frequência).  
-- **SP (São Paulo), GO (Goiás) e CE (Ceará):** 2 participantes cada.  
-- **SC, RS, RN, PI, PB, PA, MG, MA, AP e AL:** 1 participante cada.
-
-Essa distribuição mostra que, enquanto alguns estados concentram um número maior de participantes, a maioria das UFs na amostra tem uma representação menor e mais uniforme.
-
-
-![Gráfico de Pizza](outputs/graficos/qualitativas/SG_UF_PROVA_pizza.png)
-
-O gráfico de pizza representa a mesma distribuição de participantes por Unidade da Federação (UF) em uma amostra de dados do ENEM 2023, mas de forma proporcional.
-
-A visualização em pizza confirma a análise do gráfico de barras anterior, enfatizando as proporções:
-
-- **RJ (Rio de Janeiro):** maior fatia, refletindo a maior frequência de participantes na amostra.  
-- **SP (São Paulo), GO (Goiás) e CE (Ceará):** próximas em tamanho, indicando maior proporção de participantes em relação aos demais estados.  
-- **Demais UFs (SC, RS, RN, PI, PB, PA, MG, MA, AP e AL):** fatias menores e de tamanhos semelhantes, cada uma representando apenas um participante.
-
-Este gráfico é eficaz para demonstrar visualmente que, na amostra analisada, a maioria dos participantes se concentra em alguns poucos estados, com o **Rio de Janeiro** sendo o mais proeminente.
-
-
-* **TP\_LINGUA**
-    ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
-
-O gráfico de barras mostra a frequência da opção de língua estrangeira (Inglês ou Espanhol) escolhida pelos participantes na amostra de dados do ENEM 2023.
-
-A análise do gráfico revela o seguinte:
-
-- **Espanhol:** 11 participantes (língua mais escolhida).  
-- **Inglês:** 9 participantes.  
-
-Essa visualização deixa claro que, na amostra analisada, a escolha pela língua **Espanhola** foi mais frequente do que pela língua **Inglesa**.
-
-
-![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
-
-O gráfico de pizza **"Distribuição - TP_LINGUA"** representa a distribuição proporcional da escolha de língua estrangeira (Inglês ou Espanhol) por participantes do ENEM 2023, com base em uma amostra.
-
-A visualização confirma os dados do gráfico de barras anterior, enfatizando as proporções:
-
-- **Espanhol:** maior fatia, indicando que a maioria dos participantes selecionou essa língua.  
-- **Inglês:** fatia menor, confirmando que foi a segunda opção mais popular.  
-
-Este gráfico é ideal para mostrar de forma rápida e clara a pequena diferença na preferência de língua estrangeira entre os candidatos da amostra, reforçando a leve vantagem da escolha por **Espanhol**.
-
----
+Este documento apresenta as principais descobertas sobre as variáveis quantitativas e qualitativas da amostra do ENEM 2023.
 
 ### Variáveis Quantitativas
+As notas das cinco provas e a média geral foram analisadas.
 
-* **NOTA\_CH\_CIENCIAS\_HUMANAS**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)
+| Variável                 | Média | Mediana | Desvio Padrão | IQR   | Mín. | Máx. |
+| :----------------------- | :---- | :------ | :------------ | :---- | :--- | :--- |
+| **Ciências da Natureza** | 492.7 | 471.7   | 91.7          | 127.8 | 363.3 | 696.3 |
+| **Ciências Humanas** | 510.3 | 511.1   | 89.7          | 98.5  | 307.4 | 650.4 |
+| **Linguagens e Códigos** | 542.6 | 555.9   | 59.6          | 47.7  | 359.5 | 621.2 |
+| **Matemática** | 538.1 | 509.2   | 123.6         | 202.0 | 392.5 | 794.6 |
+| **Redação** | 669.0 | 670.0   | 180.1         | 250.0 | 280.0 | 920.0 |
+| **Média das 5 Notas** | 550.5 | 538.2   | 87.7          | 109.0 | 399.9 | 726.1 |
 
-O histograma exibe a distribuição das notas dos participantes do ENEM 2023 na prova de **Ciências Humanas**, com base em uma amostra de microdados.
+**Principais *Insights***:
+- **Assimetria nas notas:** A nota de **Matemática** apresenta a maior diferença entre média e mediana (538.1 vs. 509.2), seguida por **Linguagens e Códigos** e **Ciências da Natureza**. Isso sugere uma distribuição assimétrica, provavelmente influenciada por um pequeno número de notas muito altas, que puxam a média para cima.
+- **Maior dispersão:** A **Nota de Redação** e a **Nota de Matemática** demonstram a maior variabilidade (desvio padrão de 180.1 e 123.6, respectivamente), indicando que o desempenho dos participantes nessas áreas foi menos homogêneo.
+- **Dispersão da Média Geral:** A média geral das 5 notas tem um desvio padrão de 87.7, refletindo uma dispersão moderada entre o desempenho global dos participantes.
 
-A análise do gráfico revela a frequência das notas em diferentes faixas, além da posição da **média** e da **mediana**:
+---
 
-- **Distribuição das notas:**  
-  As notas mais frequentes estão concentradas em torno de **500** e **600** pontos.  
-  - Três participantes obtiveram notas na faixa de **600**.  
-  - Dois participantes estão na faixa de **500**.  
-  - Notas mais baixas (300 e 400) e algumas intermediárias aparecem com menor frequência.  
+### Variáveis Qualitativas
+A distribuição dos participantes por categorias geográficas e de língua estrangeira foi analisada.
 
-- **Medidas de tendência central:**  
-  - A **mediana** (linha verde pontilhada) está em torno de **500**, indicando que metade dos participantes tem notas iguais ou inferiores a esse valor, e a outra metade iguais ou superiores.  
-  - A **média** (linha vermelha, não visível) deve estar próxima da mediana, sugerindo uma distribuição relativamente equilibrada.  
+| Variável                 | Categoria Mais Frequente     | Frequência | Categoria Menos Frequente    | Frequência |
+| :----------------------- | :--------------------------- | :--------- | :--------------------------- | :--------- |
+| **Região** | Nordeste e Sudeste           | 7 (35%)    | Centro-Oeste, Norte e Sul    | 2 (10%)    |
+| **UF** | Rio de Janeiro (RJ)          | 4 (20%)    | Várias UFs                   | 1 (5%)     |
+| **Município** | Rio de Janeiro               | 3 (15%)    | Vários Municípios            | 1 (5%)     |
+| **Capital da UF?** | Não                          | 14 (70%)   | Sim                          | 6 (30%)    |
+| **Língua Estrangeira** | Espanhol                     | 11 (55%)   | Inglês                       | 9 (45%)    |
 
-Essa análise indica que, na amostra, a maior concentração de notas em **Ciências Humanas** está nas faixas mais altas, com um pico claro na faixa de **600 pontos**.
+**Principais *Insights***:
+- **Concentração Geográfica:** A amostra é predominantemente das regiões **Sudeste e Nordeste** (70% dos participantes), com uma sub-representação das demais regiões.
+- **Desempenho por Localidade:** O número de participantes que realizaram a prova em cidades que **não são capitais** é mais que o dobro (14 vs. 6) daqueles que a fizeram em capitais.
+- **Preferência de Língua:** Há uma ligeira preferência pelo **Espanhol** sobre o **Inglês** como língua estrangeira na amostra, embora a diferença seja pequena.
 
-   
-![Boxplot](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+---
 
-O boxplot oferece um resumo estatístico das notas de **Ciências Humanas** do ENEM 2023, com base em uma amostra de microdados.  
-Este tipo de gráfico é ideal para visualizar **distribuição, tendência central e dispersão** dos dados.
+## Gráficos e Visualizações
+A seguir, apresentamos uma galeria de gráficos que visualizam a distribuição das variáveis, suportando as estatísticas apresentadas. Cada visualização inclui uma breve análise dos padrões observados.
 
-A análise do boxplot revela:
+### Análise das Notas Quantitativas
 
-- **Mediana:**  
-  Representada pela linha verde pontilhada dentro da caixa, está próxima de **500 pontos**, indicando que 50% dos participantes têm notas iguais ou inferiores a esse valor.
+##### Nota de Ciências da Natureza
+![Histograma de Nota de Ciências da Natureza](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
+O histograma mostra uma distribuição dispersa, com a maior concentração de notas entre 400 e 500. A média (linha vermelha) está ligeiramente à direita da mediana (linha verde), indicando uma assimetria positiva, com notas mais altas puxando a média.
 
-- **Primeiro e Terceiro Quartil:**  
-  - **Q1:** ~470 pontos (25% das notas estão abaixo desse valor).  
-  - **Q3:** ~570 pontos (75% das notas estão abaixo desse valor).  
+![Boxplot de Nota de Ciências da Natureza](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+O boxplot reforça a dispersão, com o Intervalo Interquartil (IQR) abrangendo uma faixa ampla. A mediana em torno de 470 está próxima da base da caixa, o que, junto à média mais alta, confirma a assimetria positiva.
 
-- **Intervalo Interquartil (IIQ):**  
-  A amplitude entre Q1 e Q3 é relativamente curta, sugerindo que a maioria dos participantes obteve notas **próximas à mediana**.
+##### Nota de Ciências Humanas
+![Histograma de Nota de Ciências Humanas](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)
+A distribuição das notas de Ciências Humanas é mais simétrica, com a maioria dos participantes concentrada na faixa de 500 a 600. A média e a mediana estão bem próximas, como as estatísticas de resumo já indicavam.
 
-- **Mínimo e Máximo:**  
-  As hastes indicam que as notas variam de pouco acima de **400 pontos** até cerca de **620 pontos**.
+![Boxplot de Nota de Ciências Humanas](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+A caixa do boxplot é mais estreita do que a de Ciências da Natureza, indicando menor dispersão. A mediana está centralizada, e há alguns *outliers* na parte inferior da distribuição, representando notas muito baixas.
 
-- **Outliers:**  
-  Pontos isolados na faixa de **300 pontos**, representando notas **significativamente baixas**.
+##### Nota de Linguagens e Códigos
+![Histograma de Nota de Linguagens e Códigos](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
+As notas de Linguagens e Códigos mostram uma concentração clara em valores mais altos, entre 550 e 600, com um pico de frequência. A média é ligeiramente inferior à mediana, indicando uma assimetria negativa.
 
-📌 **Resumo:**  
-A maior parte das notas de **Ciências Humanas** está concentrada entre **470** e **570 pontos**, com mediana em **500**.  
-A presença de **outliers** revela alguns casos atípicos de notas bem mais baixas que o padrão geral.
+![Boxplot de Nota de Linguagens e Códigos](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
+O boxplot destaca a concentração na faixa de 520 a 570. A mediana está na parte superior da caixa, e um *outlier* em 350 confirma a assimetria negativa.
 
+##### Nota de Matemática
+![Histograma de Nota de Matemática](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
+O histograma de Matemática é o que apresenta a maior assimetria. As notas estão concentradas em torno de 500, mas uma cauda longa de notas altas puxa a média para bem acima da mediana, um padrão comum em provas de Matemática do ENEM.
 
-* **NOTA\_CN\_CIENCIAS\_DA\_NATUREZA**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
+![Boxplot de Nota de Matemática](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+O boxplot ilustra essa assimetria de forma nítida. A mediana está na parte inferior da caixa, e a haste superior é consideravelmente mais longa que a inferior, refletindo a ampla dispersão e as notas altas.
 
-O histograma ilustra a distribuição de frequência das notas dos participantes do **ENEM 2023** na prova de **Ciências da Natureza**, com base em uma amostra de microdados.
+##### Nota de Redação
+![Histograma de Nota de Redação](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
+A distribuição da nota de Redação é a mais dispersa, com picos em notas arredondadas (560, 680, 800 e 860), o que é esperado devido ao sistema de pontuação em intervalos de 20 pontos. A média e a mediana são muito próximas, indicando uma distribuição simétrica.
 
-A análise do gráfico revela:
+![Boxplot de Nota de Redação](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
+O boxplot confirma a simetria, com a mediana centralizada na caixa. A ausência de *outliers* notáveis e as hastes longas mostram uma dispersão uniforme de notas.
 
-- **Distribuição das Notas:**  
-  As notas mais frequentes estão concentradas em torno de **400** e **470 pontos**, com **três participantes** em cada faixa.  
-  A distribuição é **bastante dispersa**, com valores variando de aproximadamente **350** até **700 pontos**.
+##### Média das 5 Notas
+![Histograma da Média das 5 Notas](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
+A distribuição da média das notas apresenta múltiplos picos, refletindo a variabilidade do desempenho geral. A média está um pouco acima da mediana, indicando uma leve assimetria positiva.
 
-- **Medidas de Tendência Central:**  
-  - **Mediana (linha verde pontilhada):** ~**470 pontos**, indicando que metade dos participantes teve notas iguais ou inferiores a esse valor.  
-  - **Média (linha vermelha pontilhada):** ~**490 pontos**, posicionada **um pouco acima da mediana**, sugerindo uma distribuição **levemente assimétrica**.  
+![Boxplot da Média das 5 Notas](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
+O boxplot da média geral mostra que a maioria dos participantes tem um desempenho entre 490 e 600. A mediana em 530 está na metade inferior da caixa, e a haste superior é mais longa, confirmando que notas médias mais altas são responsáveis pela assimetria.
 
-📌 **Resumo:**  
-A maior concentração de notas está entre **400 e 470 pontos**, com a média e mediana próximas, reforçando que a distribuição é **quase simétrica**, mas com **dispersão considerável** em torno dessas faixas.
+---
 
-![Boxplot](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+### Análise das Variáveis Qualitativas
 
-O boxplot fornece um resumo estatístico das notas de **Ciências da Natureza** do **ENEM 2023**, com base em uma amostra de microdados.  
-Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores atípicos**.
+#### Município/Capital UF Prova
+![Gráfico de Barras](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
+Os gráficos mostram que a maioria dos participantes da amostra realizou a prova em municípios que não são capitais (70%), evidenciando a diversidade geográfica.
 
-A análise do boxplot mostra:
+#### Município de Prova
+![Gráfico de Barras](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
+A distribuição por município é bastante dispersa, com a maior concentração de participantes no Rio de Janeiro (15% da amostra), seguido por outros municípios com frequência menor.
 
-- **Mediana:**  
-  A linha **verde pontilhada** dentro da caixa marca a **mediana (~470 pontos)**, indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
-
-- **Média:**  
-  A linha **vermelha pontilhada** está próxima de **490 pontos**, ligeiramente acima da mediana, sugerindo que a distribuição não é perfeitamente simétrica.
-
-- **Quartis:**  
-  - **Q1 (~420 pontos):** 25% dos participantes têm notas iguais ou inferiores a este valor.  
-  - **Q3 (~550 pontos):** 75% dos participantes têm notas iguais ou inferiores a este valor.  
-
-- **Intervalo Interquartil (IIQ):**  
-  A caixa, entre **420 e 550 pontos**, mostra que **50%** das notas estão nessa faixa, revelando uma **dispersão considerável**.
-
-- **Mínimo e Máximo:**  
-  As hastes se estendem de pouco acima de **350** até **quase 700 pontos**, sem presença de outliers visuais.
-
-📌 **Resumo:**  
-A maioria das notas está concentrada entre **420 e 550 pontos**, com mediana em **470**. A distribuição apresenta **boa variação**, mas não há outliers marcantes.
-
-* **NOTA\_LC\_LINGUAGENS\_E\_CODIGOS**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
-
-O histograma mostra a frequência das notas dos participantes do **ENEM* na prova de **Linguagens e Códigos**, com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Distribuição das Notas:**  
-  A maioria das notas está concentrada entre **550 e 600 pontos**.  
-  - A maior frequência (**4 participantes**) ocorre na faixa de **560 pontos**.  
-  - Há uma clara concentração nas notas mais altas, enquanto um participante obteve nota na faixa de **350 pontos** e outros em faixas mais baixas, mas com menor frequência.
-
-- **Medidas de Tendência Central:**  
-  - **Mediana (linha verde pontilhada):** ~**550 pontos**, indicando que metade dos participantes teve notas iguais ou inferiores a esse valor.  
-  - **Média (linha vermelha pontilhada):** ~**540 pontos**, ligeiramente abaixo da mediana, sugerindo que a distribuição **não é perfeitamente simétrica**.
-
-📌 **Resumo:**  
-Na amostra, a maior concentração de notas de **Linguagens e Códigos** está na faixa de **550 a 600 pontos**, com mediana e média próximas, localizadas um pouco acima do pico das notas mais frequentes.
-
-
-
-![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
-
-O boxplot fornece um resumo estatístico das notas de **Linguagens e Códigos** do **ENEM 2023**, com base em uma amostra de microdados.  
-Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores discrepantes**.
-
-A análise do boxplot revela:
-
-- **Mediana:**  
-  A linha **verde pontilhada** dentro da caixa marca a mediana (~**550 pontos**), indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
-
-- **Média:**  
-  A linha **vermelha pontilhada** está ligeiramente abaixo da mediana (~**540 pontos**), mostrando que a distribuição é quase simétrica, com leve inclinação para notas mais baixas.
-
-- **Quartis:**  
-  - **Q1 (~520 pontos):** 25% das notas estão abaixo deste valor.  
-  - **Q3 (~570 pontos):** 75% das notas estão abaixo deste valor.  
-
-- **Intervalo Interquartil (IIQ):**  
-  A caixa, entre **520 e 570 pontos**, mostra que 50% das notas estão concentradas nessa faixa.
-
-- **Mínimo e Máximo:**  
-  As hastes se estendem de pouco acima de **450** até **quase 620 pontos**, representando o intervalo de notas sem considerar outliers.
-
-- **Outlier:**  
-  Um ponto isolado na faixa de **350 pontos**, indicando uma nota atipicamente baixa.
-
-📌 **Resumo:**  
-A maioria das notas de **Linguagens e Códigos** está concentrada entre **520 e 570 pontos**, com mediana em **550**. A presença de um **outlier** demonstra que houve pelo menos uma nota significativamente abaixo do padrão geral.
-
-
-* **NOTA\_MT\_MATEMATICA**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
-
-O histograma mostra a frequência das notas dos participantes do **ENEM 2023** na prova de **Matemática**, com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Distribuição das Notas:**  
-  A maior concentração de notas está em torno de **510 pontos**, com **3 participantes**.  
-  Outros picos de frequência ocorrem nas faixas de **410, 420, 650 e 790 pontos**, com **2 participantes** em cada.  
-  A distribuição é bastante **dispersa**, com notas variando de aproximadamente **400 a 800 pontos**.
-
-- **Medidas de Tendência Central:**  
-  - **Mediana (linha verde pontilhada):** ~**510 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
-  - **Média (linha vermelha pontilhada):** ~**560 pontos**, significativamente acima da mediana, sugerindo **assimetria** na distribuição devido a notas altas que puxam a média para cima.
-
-📌 **Resumo:**  
-A maior concentração de notas de **Matemática** está na faixa de **510 pontos**, mas a presença de notas muito altas eleva a média acima da mediana, mostrando que a distribuição é **assimétrica e dispersa**.
-
-
-
-
-![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
-
-O boxplot fornece um resumo estatístico das notas de **Matemática** do **ENEM 2023**, com base em uma amostra de microdados.  
-Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores atípicos**.
-
-A análise do boxplot revela:
-
-- **Mediana:**  
-  A linha **verde pontilhada** dentro da caixa marca a mediana (~**510 pontos**), indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
-
-- **Média:**  
-  A linha **vermelha pontilhada** está significativamente acima da mediana (~**540 pontos**), sugerindo que a distribuição é **assimétrica**, com notas altas puxando a média para cima.
-
-- **Quartis:**  
-  - **Q1 (~420 pontos):** 25% das notas estão abaixo deste valor.  
-  - **Q3 (~620 pontos):** 75% das notas estão abaixo deste valor.
-
-- **Intervalo Interquartil (IIQ):**  
-  A caixa, entre **420 e 620 pontos**, mostra que 50% das notas estão concentradas nessa faixa, evidenciando ampla dispersão.
-
-- **Mínimo e Máximo:**  
-  As hastes se estendem de aproximadamente **400** até **quase 800 pontos**, representando o intervalo de notas sem considerar outliers.
-
-📌 **Resumo:**  
-A maioria das notas de **Matemática** na amostra está concentrada entre **420 e 620 pontos**, com mediana em **510**.  
-A distribuição é ampla, e a presença de notas mais altas eleva a média em relação à mediana, mostrando assimetria na amostra.
-
-
-* **NOTA\_REDACAO**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
-
-O histograma mostra a frequência das notas da **Redação** do **ENEM 2023**, com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Distribuição das Notas:**  
-  As notas de Redação apresentam uma **dispersão considerável**.  
-  Existem **picos de frequência** com 2 participantes nas faixas de **560, 680, 800 e 860 pontos**.  
-  Outras notas, variando de **300 a 860 pontos**, aparecem com **1 participante** em cada faixa, mostrando que não há uma concentração única.
-
-- **Medidas de Tendência Central:**  
-  - **Mediana (linha verde pontilhada):** ~**680 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
-  - **Média (linha vermelha, não visível):** próxima da mediana, sugerindo que **média e mediana são semelhantes**.
-
-📌 **Resumo:**  
-As notas de Redação na amostra são **bem distribuídas**, sem uma faixa predominante, mas apresentam **picos nas notas mais altas**, indicando que alguns participantes se destacaram significativamente.
-
-
-![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
-
-O boxplot fornece um resumo estatístico das notas de **Redação** do **ENEM 2023**, com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Mediana (linha verde pontilhada):** ~**680 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
-- **Média (linha vermelha, não visível):** próxima da mediana, sugerindo que a distribuição das notas é **simétrica**.  
-- **Primeiro e Terceiro Quartil (Q1 e Q3):**  
-  - Q1 ~ 560 pontos (25% dos participantes com notas iguais ou inferiores).  
-  - Q3 ~ 800 pontos (75% dos participantes com notas iguais ou inferiores).  
-- **Intervalo Interquartil (IIQ):** 50% das notas situam-se entre **560 e 800 pontos**, indicando **boa dispersão**.  
-- **Mínimo e Máximo:** Hastes do boxplot indicam notas entre **300 e 900 pontos**, sem outliers visíveis.
-
-📌 **Resumo:**  
-A maioria das notas de Redação na amostra está concentrada entre **560 e 800 pontos**, com mediana em 680. A distribuição é ampla, mas sem outliers significativos, indicando uma dispersão uniforme das notas.
-
-
-* **NOTA\_MEDIA\_5\_NOTAS**
-    ![Histograma](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
-O histograma mostra a distribuição da **média das cinco notas** do ENEM 2023 (Linguagens, Ciências Humanas, Ciências da Natureza, Matemática e Redação), com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Distribuição das notas médias:** ampla dispersão, com picos de frequência em 500, 520, 620 e 720 (2 participantes em cada faixa). Outras faixas também estão representadas, indicando uma variedade considerável de médias de desempenho.
-- **Mediana (linha verde pontilhada):** ~530, indicando que metade dos participantes obteve média igual ou inferior a esse valor.
-- **Média (linha vermelha pontilhada):** ~550, ligeiramente acima da mediana, sugerindo que a distribuição não é perfeitamente simétrica e que há algumas médias altas puxando a média para cima.
-
-📌 **Resumo:**  
-A maior concentração de notas médias na amostra situa-se na faixa de **500 a 550**, com a mediana em 530 e a média em 550. A dispersão indica variação significativa entre os participantes.
-
-
-![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
-
-O boxplot fornece um resumo estatístico da **média das cinco notas** do ENEM 2023 (Linguagens, Ciências Humanas, Ciências da Natureza, Matemática e Redação), com base em uma amostra de microdados.
-
-A análise do gráfico revela:
-
-- **Mediana (linha verde pontilhada):** ~530, indicando que metade dos participantes obteve média igual ou inferior a esse valor.
-- **Média (linha vermelha pontilhada):** ~550, ligeiramente acima da mediana, sugerindo distribuição assimétrica, puxada para cima por notas médias mais altas.
-- **Primeiro e Terceiro Quartil (Q1 e Q3):**  
-  - Q1 ~490 → 25% dos participantes com médias iguais ou inferiores a esse valor.  
-  - Q3 ~600 → 75% dos participantes com médias iguais ou inferiores a esse valor.
-- **Intervalo Interquartil (IIQ):** 50% das médias entre 490 e 600, mostrando ampla dispersão.
-- **Mínimo e Máximo (hastes):** de ~400 até acima de 700, representando o intervalo sem outliers.
-
-📌 **Resumo:**  
-A maior concentração de médias está entre **490 e 600**, com mediana em 530. A distribuição é ampla, e a haste superior mais longa indica que notas médias altas elevam a média geral.
+#### UF de Prova
+![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
+Os gráficos de UF refletem a concentração observada nos municípios, com o Rio de Janeiro (RJ) liderando com 20% da amostra.
+
+#### Região de Prova
+![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
+A análise por região demonstra a forte representação do Sudeste e do Nordeste (35% cada), enquanto as demais regiões (Sul, Norte e Centro-Oeste) têm uma representação menor na amostra.
+
+#### Língua Estrangeira
+![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
+![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
+A preferência pela língua estrangeira é ligeiramente inclinada para o Espanhol (55%), mas a divisão é bastante equilibrada em comparação com o Inglês (45%).
 
