@@ -171,3 +171,11 @@ A análise por região demonstra a forte representação do Sudeste e do Nordest
 ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
 A preferência pela língua estrangeira é ligeiramente inclinada para o Espanhol (55%), mas a divisão é bastante equilibrada em comparação com o Inglês (45%).
 
+---
+## Conclusão
+
+A análise exploratória dos microdados do ENEM 2023 revelou padrões importantes na amostra estudada. A maior parte das notas quantitativas apresentou distribuições assimétricas, especialmente em Matemática, o que indica uma grande variação de desempenho entre os participantes.
+
+Além disso, a análise qualitativa mostrou uma concentração de participantes nas regiões Sudeste e Nordeste, e uma leve preferência pela prova de Língua Estrangeira Espanhol. Essas descobertas fornecem uma visão inicial do comportamento e das características dos participantes, servindo como base para análises mais aprofundadas, como estudos de correlação e modelagem preditiva.
+
+O trabalho destaca a importância da estatística descritiva e da visualização de dados como etapas cruciais para a compreensão de grandes conjuntos de dados.
