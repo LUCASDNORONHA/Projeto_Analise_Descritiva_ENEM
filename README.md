@@ -430,7 +430,7 @@ Na amostra, a maior concentração de notas de **Linguagens e Códigos** está n
 
 
 
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
+![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
 
 * **NOTA\_MT\_MATEMATICA**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
