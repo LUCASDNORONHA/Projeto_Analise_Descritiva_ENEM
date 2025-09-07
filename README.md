@@ -532,6 +532,22 @@ As notas de Redação na amostra são **bem distribuídas**, sem uma faixa predo
 
 ![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
 
+O boxplot fornece um resumo estatístico das notas de **Redação** do **ENEM 2023**, com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Mediana (linha verde pontilhada):** ~**680 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
+- **Média (linha vermelha, não visível):** próxima da mediana, sugerindo que a distribuição das notas é **simétrica**.  
+- **Primeiro e Terceiro Quartil (Q1 e Q3):**  
+  - Q1 ~ 560 pontos (25% dos participantes com notas iguais ou inferiores).  
+  - Q3 ~ 800 pontos (75% dos participantes com notas iguais ou inferiores).  
+- **Intervalo Interquartil (IIQ):** 50% das notas situam-se entre **560 e 800 pontos**, indicando **boa dispersão**.  
+- **Mínimo e Máximo:** Hastes do boxplot indicam notas entre **300 e 900 pontos**, sem outliers visíveis.
+
+📌 **Resumo:**  
+A maioria das notas de Redação na amostra está concentrada entre **560 e 800 pontos**, com mediana em 680. A distribuição é ampla, mas sem outliers significativos, indicando uma dispersão uniforme das notas.
+
+
 * **NOTA\_MEDIA\_5\_NOTAS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
     ![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
