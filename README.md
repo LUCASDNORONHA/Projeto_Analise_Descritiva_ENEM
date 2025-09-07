@@ -432,6 +432,34 @@ Na amostra, a maior concentração de notas de **Linguagens e Códigos** está n
 
 ![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
 
+O boxplot fornece um resumo estatístico das notas de **Linguagens e Códigos** do **ENEM 2023**, com base em uma amostra de microdados.  
+Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores discrepantes**.
+
+A análise do boxplot revela:
+
+- **Mediana:**  
+  A linha **verde pontilhada** dentro da caixa marca a mediana (~**550 pontos**), indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
+
+- **Média:**  
+  A linha **vermelha pontilhada** está ligeiramente abaixo da mediana (~**540 pontos**), mostrando que a distribuição é quase simétrica, com leve inclinação para notas mais baixas.
+
+- **Quartis:**  
+  - **Q1 (~520 pontos):** 25% das notas estão abaixo deste valor.  
+  - **Q3 (~570 pontos):** 75% das notas estão abaixo deste valor.  
+
+- **Intervalo Interquartil (IIQ):**  
+  A caixa, entre **520 e 570 pontos**, mostra que 50% das notas estão concentradas nessa faixa.
+
+- **Mínimo e Máximo:**  
+  As hastes se estendem de pouco acima de **450** até **quase 620 pontos**, representando o intervalo de notas sem considerar outliers.
+
+- **Outlier:**  
+  Um ponto isolado na faixa de **350 pontos**, indicando uma nota atipicamente baixa.
+
+📌 **Resumo:**  
+A maioria das notas de **Linguagens e Códigos** está concentrada entre **520 e 570 pontos**, com mediana em **550**. A presença de um **outlier** demonstra que houve pelo menos uma nota significativamente abaixo do padrão geral.
+
+
 * **NOTA\_MT\_MATEMATICA**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
     ![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
