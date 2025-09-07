@@ -512,7 +512,25 @@ A distribuição é ampla, e a presença de notas mais altas eleva a média em r
 
 * **NOTA\_REDACAO**
     ![Histograma](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
+
+O histograma mostra a frequência das notas da **Redação** do **ENEM 2023**, com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Distribuição das Notas:**  
+  As notas de Redação apresentam uma **dispersão considerável**.  
+  Existem **picos de frequência** com 2 participantes nas faixas de **560, 680, 800 e 860 pontos**.  
+  Outras notas, variando de **300 a 860 pontos**, aparecem com **1 participante** em cada faixa, mostrando que não há uma concentração única.
+
+- **Medidas de Tendência Central:**  
+  - **Mediana (linha verde pontilhada):** ~**680 pontos**, indicando que metade dos participantes obteve notas iguais ou inferiores a esse valor.  
+  - **Média (linha vermelha, não visível):** próxima da mediana, sugerindo que **média e mediana são semelhantes**.
+
+📌 **Resumo:**  
+As notas de Redação na amostra são **bem distribuídas**, sem uma faixa predominante, mas apresentam **picos nas notas mais altas**, indicando que alguns participantes se destacaram significativamente.
+
+
+![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
 
 * **NOTA\_MEDIA\_5\_NOTAS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
