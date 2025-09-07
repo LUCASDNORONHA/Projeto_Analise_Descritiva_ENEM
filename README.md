@@ -484,6 +484,32 @@ A maior concentração de notas de **Matemática** está na faixa de **510 ponto
 
 ![Boxplot](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
 
+O boxplot fornece um resumo estatístico das notas de **Matemática** do **ENEM 2023**, com base em uma amostra de microdados.  
+Este gráfico é ideal para visualizar a **dispersão**, a **tendência central** e a **presença de valores atípicos**.
+
+A análise do boxplot revela:
+
+- **Mediana:**  
+  A linha **verde pontilhada** dentro da caixa marca a mediana (~**510 pontos**), indicando que **50%** dos participantes tiveram notas iguais ou inferiores a esse valor.
+
+- **Média:**  
+  A linha **vermelha pontilhada** está significativamente acima da mediana (~**540 pontos**), sugerindo que a distribuição é **assimétrica**, com notas altas puxando a média para cima.
+
+- **Quartis:**  
+  - **Q1 (~420 pontos):** 25% das notas estão abaixo deste valor.  
+  - **Q3 (~620 pontos):** 75% das notas estão abaixo deste valor.
+
+- **Intervalo Interquartil (IIQ):**  
+  A caixa, entre **420 e 620 pontos**, mostra que 50% das notas estão concentradas nessa faixa, evidenciando ampla dispersão.
+
+- **Mínimo e Máximo:**  
+  As hastes se estendem de aproximadamente **400** até **quase 800 pontos**, representando o intervalo de notas sem considerar outliers.
+
+📌 **Resumo:**  
+A maioria das notas de **Matemática** na amostra está concentrada entre **420 e 620 pontos**, com mediana em **510**.  
+A distribuição é ampla, e a presença de notas mais altas eleva a média em relação à mediana, mostrando assimetria na amostra.
+
+
 * **NOTA\_REDACAO**
     ![Histograma](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
     ![Boxplot](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
