@@ -411,6 +411,25 @@ A maioria das notas está concentrada entre **420 e 550 pontos**, com mediana em
 
 * **NOTA\_LC\_LINGUAGENS\_E\_CODIGOS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
+
+O histograma mostra a frequência das notas dos participantes do **ENEM* na prova de **Linguagens e Códigos**, com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Distribuição das Notas:**  
+  A maioria das notas está concentrada entre **550 e 600 pontos**.  
+  - A maior frequência (**4 participantes**) ocorre na faixa de **560 pontos**.  
+  - Há uma clara concentração nas notas mais altas, enquanto um participante obteve nota na faixa de **350 pontos** e outros em faixas mais baixas, mas com menor frequência.
+
+- **Medidas de Tendência Central:**  
+  - **Mediana (linha verde pontilhada):** ~**550 pontos**, indicando que metade dos participantes teve notas iguais ou inferiores a esse valor.  
+  - **Média (linha vermelha pontilhada):** ~**540 pontos**, ligeiramente abaixo da mediana, sugerindo que a distribuição **não é perfeitamente simétrica**.
+
+📌 **Resumo:**  
+Na amostra, a maior concentração de notas de **Linguagens e Códigos** está na faixa de **550 a 600 pontos**, com mediana e média próximas, localizadas um pouco acima do pico das notas mais frequentes.
+
+
+
     ![Boxplot](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
 
 * **NOTA\_MT\_MATEMATICA**
