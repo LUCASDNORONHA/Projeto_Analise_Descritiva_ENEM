@@ -550,4 +550,16 @@ A maioria das notas de Redação na amostra está concentrada entre **560 e 800 
 
 * **NOTA\_MEDIA\_5\_NOTAS**
     ![Histograma](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
-    ![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
+O histograma mostra a distribuição da **média das cinco notas** do ENEM 2023 (Linguagens, Ciências Humanas, Ciências da Natureza, Matemática e Redação), com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Distribuição das notas médias:** ampla dispersão, com picos de frequência em 500, 520, 620 e 720 (2 participantes em cada faixa). Outras faixas também estão representadas, indicando uma variedade considerável de médias de desempenho.
+- **Mediana (linha verde pontilhada):** ~530, indicando que metade dos participantes obteve média igual ou inferior a esse valor.
+- **Média (linha vermelha pontilhada):** ~550, ligeiramente acima da mediana, sugerindo que a distribuição não é perfeitamente simétrica e que há algumas médias altas puxando a média para cima.
+
+📌 **Resumo:**  
+A maior concentração de notas médias na amostra situa-se na faixa de **500 a 550**, com a mediana em 530 e a média em 550. A dispersão indica variação significativa entre os participantes.
+
+
+![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
