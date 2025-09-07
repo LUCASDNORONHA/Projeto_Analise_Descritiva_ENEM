@@ -563,3 +563,19 @@ A maior concentração de notas médias na amostra situa-se na faixa de **500 a 
 
 
 ![Boxplot](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
+
+O boxplot fornece um resumo estatístico da **média das cinco notas** do ENEM 2023 (Linguagens, Ciências Humanas, Ciências da Natureza, Matemática e Redação), com base em uma amostra de microdados.
+
+A análise do gráfico revela:
+
+- **Mediana (linha verde pontilhada):** ~530, indicando que metade dos participantes obteve média igual ou inferior a esse valor.
+- **Média (linha vermelha pontilhada):** ~550, ligeiramente acima da mediana, sugerindo distribuição assimétrica, puxada para cima por notas médias mais altas.
+- **Primeiro e Terceiro Quartil (Q1 e Q3):**  
+  - Q1 ~490 → 25% dos participantes com médias iguais ou inferiores a esse valor.  
+  - Q3 ~600 → 75% dos participantes com médias iguais ou inferiores a esse valor.
+- **Intervalo Interquartil (IIQ):** 50% das médias entre 490 e 600, mostrando ampla dispersão.
+- **Mínimo e Máximo (hastes):** de ~400 até acima de 700, representando o intervalo sem outliers.
+
+📌 **Resumo:**  
+A maior concentração de médias está entre **490 e 600**, com mediana em 530. A distribuição é ampla, e a haste superior mais longa indica que notas médias altas elevam a média geral.
+
