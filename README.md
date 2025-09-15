@@ -94,44 +94,56 @@ A seguir, apresentamos uma galeria de gráficos que visualizam a distribuição 
 
 ##### Nota de Ciências da Natureza
 ![Histograma de Nota de Ciências da Natureza](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_histograma.png)
+
 O histograma mostra uma distribuição dispersa, com a maior concentração de notas entre 400 e 500. A média (linha vermelha) está ligeiramente à direita da mediana (linha verde), indicando uma assimetria positiva, com notas mais altas puxando a média.
 
 ![Boxplot de Nota de Ciências da Natureza](outputs/graficos/quantitativas/NOTA_CN_CIENCIAS_DA_NATUREZA_boxplot.png)
+
 O boxplot reforça a dispersão, com o Intervalo Interquartil (IQR) abrangendo uma faixa ampla. A mediana em torno de 470 está próxima da base da caixa, o que, junto à média mais alta, confirma a assimetria positiva.
 
 ##### Nota de Ciências Humanas
 ![Histograma de Nota de Ciências Humanas](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_histograma.png)
+
 A distribuição das notas de Ciências Humanas é mais simétrica, com a maioria dos participantes concentrada na faixa de 500 a 600. A média e a mediana estão bem próximas, como as estatísticas de resumo já indicavam.
 
 ![Boxplot de Nota de Ciências Humanas](outputs/graficos/quantitativas/NOTA_CH_CIENCIAS_HUMANAS_boxplot.png)
+
 A caixa do boxplot é mais estreita do que a de Ciências da Natureza, indicando menor dispersão. A mediana está centralizada, e há alguns *outliers* na parte inferior da distribuição, representando notas muito baixas.
 
 ##### Nota de Linguagens e Códigos
 ![Histograma de Nota de Linguagens e Códigos](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_histograma.png)
+
 As notas de Linguagens e Códigos mostram uma concentração clara em valores mais altos, entre 550 e 600, com um pico de frequência. A média é ligeiramente inferior à mediana, indicando uma assimetria negativa.
 
 ![Boxplot de Nota de Linguagens e Códigos](outputs/graficos/quantitativas/NOTA_LC_LINGUAGENS_E_CODIGOS_boxplot.png)
+
 O boxplot destaca a concentração na faixa de 520 a 570. A mediana está na parte superior da caixa, e um *outlier* em 350 confirma a assimetria negativa.
 
 ##### Nota de Matemática
 ![Histograma de Nota de Matemática](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_histograma.png)
+
 O histograma de Matemática é o que apresenta a maior assimetria. As notas estão concentradas em torno de 500, mas uma cauda longa de notas altas puxa a média para bem acima da mediana, um padrão comum em provas de Matemática do ENEM.
 
 ![Boxplot de Nota de Matemática](outputs/graficos/quantitativas/NOTA_MT_MATEMATICA_boxplot.png)
+
 O boxplot ilustra essa assimetria de forma nítida. A mediana está na parte inferior da caixa, e a haste superior é consideravelmente mais longa que a inferior, refletindo a ampla dispersão e as notas altas.
 
 ##### Nota de Redação
 ![Histograma de Nota de Redação](outputs/graficos/quantitativas/NOTA_REDACAO_histograma.png)
+
 A distribuição da nota de Redação é a mais dispersa, com picos em notas arredondadas (560, 680, 800 e 860), o que é esperado devido ao sistema de pontuação em intervalos de 20 pontos. A média e a mediana são muito próximas, indicando uma distribuição simétrica.
 
 ![Boxplot de Nota de Redação](outputs/graficos/quantitativas/NOTA_REDACAO_boxplot.png)
+
 O boxplot confirma a simetria, com a mediana centralizada na caixa. A ausência de *outliers* notáveis e as hastes longas mostram uma dispersão uniforme de notas.
 
 ##### Média das 5 Notas
 ![Histograma da Média das 5 Notas](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_histograma.png)
+
 A distribuição da média das notas apresenta múltiplos picos, refletindo a variabilidade do desempenho geral. A média está um pouco acima da mediana, indicando uma leve assimetria positiva.
 
 ![Boxplot da Média das 5 Notas](outputs/graficos/quantitativas/NOTA_MEDIA_5_NOTAS_boxplot.png)
+
 O boxplot da média geral mostra que a maioria dos participantes tem um desempenho entre 490 e 600. A mediana em 530 está na metade inferior da caixa, e a haste superior é mais longa, confirmando que notas médias mais altas são responsáveis pela assimetria.
 
 ---
@@ -141,26 +153,31 @@ O boxplot da média geral mostra que a maioria dos participantes tem um desempen
 #### Município/Capital UF Prova
 ![Gráfico de Barras](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_barras.png)
 ![Gráfico de Pizza](outputs/graficos/qualitativas/Municipio_Capital_UF_Prova_pizza.png)
+
 Os gráficos mostram que a maioria dos participantes da amostra realizou a prova em municípios que não são capitais (70%), evidenciando a diversidade geográfica.
 
 #### Município de Prova
 ![Gráfico de Barras](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_barras.png)
 ![Gráfico de Pizza](outputs/graficos/qualitativas/NO_MUNICIPIO_PROVA_pizza.png)
+
 A distribuição por município é bastante dispersa, com a maior concentração de participantes no Rio de Janeiro (15% da amostra), seguido por outros municípios com frequência menor.
 
 #### UF de Prova
 ![Gráfico de Barras](outputs/graficos/qualitativas/Nome_UF_Prova_barras.png)
 ![Gráfico de Pizza](outputs/graficos/qualitativas/Nome_UF_Prova_pizza.png)
+
 Os gráficos de UF refletem a concentração observada nos municípios, com o Rio de Janeiro (RJ) liderando com 20% da amostra.
 
 #### Região de Prova
 ![Gráfico de Barras](outputs/graficos/qualitativas/Regiao_Nome_Prova_barras.png)
 ![Gráfico de Pizza](outputs/graficos/qualitativas/Regiao_Nome_Prova_pizza.png)
+
 A análise por região demonstra a forte representação do Sudeste e do Nordeste (35% cada), enquanto as demais regiões (Sul, Norte e Centro-Oeste) têm uma representação menor na amostra.
 
 #### Língua Estrangeira
 ![Gráfico de Barras](outputs/graficos/qualitativas/TP_LINGUA_barras.png)
 ![Gráfico de Pizza](outputs/graficos/qualitativas/TP_LINGUA_pizza.png)
+
 A preferência pela língua estrangeira é ligeiramente inclinada para o Espanhol (55%), mas a divisão é bastante equilibrada em comparação com o Inglês (45%).
 
 ---
