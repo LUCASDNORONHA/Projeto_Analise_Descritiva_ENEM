@@ -16,7 +16,7 @@ Para cada variável, os resultados estatísticos e visuais foram acompanhados de
 
 ## Estrutura do Repositório
 A organização do projeto foi pensada para garantir reprodutibilidade e facilitar a navegação.
----
+
 ```
 Projeto_Analise_Descritiva_ENEM/
 ├── data/                      # Armazena o conjunto de dados brutos.
@@ -29,7 +29,7 @@ Projeto_Analise_Descritiva_ENEM/
 ├── Projeto_Analise_Descritiva_ENEM.Rproj # Arquivo de projeto do RStudio
 └── README.md                  # Este arquivo.
 ```
----
+
 ---
 
 ## Como Reproduzir a Análise
