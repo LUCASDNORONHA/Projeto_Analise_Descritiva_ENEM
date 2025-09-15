@@ -17,26 +17,18 @@ Para cada variável, os resultados estatísticos e visuais foram acompanhados de
 ## Estrutura do Repositório
 A organização do projeto foi pensada para garantir reprodutibilidade e facilitar a navegação.
 ---
-
+```
 Projeto_Analise_Descritiva_ENEM/
 ├── data/                      # Armazena o conjunto de dados brutos.
-
 ├── outputs/                   # Contém os resultados e gráficos gerados.
-
 │   ├── graficos/              # Armazena todas as visualizações.
-
 │   │   ├── qualitativas/      # Gráficos de barras e pizza.
-
 │   │   └── quantitativas/     # Histogramas e boxplots.
-
 ├── scripts/                   # Scripts auxiliares, se houver.
-
 ├── analise_enem.Rmd           # O script principal em RMarkdown.
-
 ├── Projeto_Analise_Descritiva_ENEM.Rproj # Arquivo de projeto do RStudio
-
 └── README.md                  # Este arquivo.
-
+```
 ---
 ---
 
